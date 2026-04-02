@@ -1,834 +1,1104 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Creative Brief — Илюстраторско задание | АЛФА</title>
-<style>
-  :root {
-    --warm: #FFF8F0;
-    --accent: #E8734A;
-    --accent-light: #FFF0EA;
-    --text: #2D2A26;
-    --muted: #7A756E;
-    --border: #E8E2DA;
-    --green: #4A9B6E;
-    --blue: #4A7FB5;
-    --purple: #8B6BB5;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: #F5F0EB;
-    color: var(--text);
-    line-height: 1.6;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Brief — Илюстраторско задание | Оскар и Румбата</title>
+  <style>
+    :root {
+      --warm: #FFF8F0;
+      --accent: #E8734A;
+      --accent-light: #FFF0EA;
+      --text: #2D2A26;
+      --muted: #7A756E;
+      --border: #E8E2DA;
+      --green: #4A9B6E;
+      --blue: #4A7FB5;
+      --purple: #8B6BB5;
+    }
 
-  /* ─── Header ─── */
-  .header {
-    background: var(--accent);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .header h1 { font-size: 2em; margin-bottom: 8px; }
-  .header p { font-size: 1.1em; opacity: 0.9; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  /* ─── Container ─── */
-  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #F5F0EB;
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-  /* ─── Overview card ─── */
-  .overview {
-    background: white;
-    border-radius: 12px;
-    padding: 30px;
-    margin: 24px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  }
-  .overview h2 {
-    color: var(--accent);
-    margin-bottom: 16px;
-    font-size: 1.3em;
-  }
-  .overview table { width: 100%; border-collapse: collapse; }
-  .overview td { padding: 6px 12px; vertical-align: top; }
-  .overview td:first-child { font-weight: 600; width: 180px; color: var(--muted); }
+    /* ─── Header ─── */
+    .header {
+      background: var(--accent);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-  /* ─── Visual rules ─── */
-  .rules {
-    background: var(--accent-light);
-    border-left: 4px solid var(--accent);
-    border-radius: 0 12px 12px 0;
-    padding: 24px 28px;
-    margin: 24px 0;
-  }
-  .rules h2 { color: var(--accent); margin-bottom: 12px; }
-  .rules ul { padding-left: 20px; }
-  .rules li { margin-bottom: 8px; }
-  .rules strong { color: var(--text); }
+    .header h1 {
+      font-size: 2em;
+      margin-bottom: 8px;
+    }
 
-  /* ─── Page card ─── */
-  .page-card {
-    background: white;
-    border-radius: 12px;
-    margin: 32px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    overflow: hidden;
-    page-break-inside: avoid;
-  }
-  .page-card-header {
-    background: var(--accent);
-    color: white;
-    padding: 16px 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .page-card-header h2 { font-size: 1.2em; }
-  .page-badge {
-    background: rgba(255,255,255,0.25);
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.85em;
-  }
-  .page-card-body { padding: 28px; }
+    .header p {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
 
-  /* ─── Wireframe ─── */
-  .wireframe {
-    border: 2px dashed var(--border);
-    border-radius: 8px;
-    padding: 20px;
-    margin: 16px 0;
-    background: #FAFAF8;
-    font-family: monospace;
-    font-size: 0.85em;
-    white-space: pre-line;
-    line-height: 1.8;
-    color: var(--muted);
-  }
+    /* ─── Container ─── */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-  /* ─── Sections within page ─── */
-  .section-label {
-    display: inline-block;
-    font-size: 0.75em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 3px 10px;
-    border-radius: 4px;
-    margin: 20px 0 8px 0;
-  }
-  .label-illust { background: #E8F5E9; color: var(--green); }
-  .label-text { background: #E3F2FD; color: var(--blue); }
-  .label-interactive { background: #F3E5F5; color: var(--purple); }
-  .label-note { background: #FFF3E0; color: #E65100; }
-  .label-qr { background: #FCE4EC; color: #C62828; }
+    /* ─── Overview card ─── */
+    .overview {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 24px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
 
-  .detail { margin: 8px 0 16px 0; }
-  .detail p { margin-bottom: 6px; }
+    .overview h2 {
+      color: var(--accent);
+      margin-bottom: 16px;
+      font-size: 1.3em;
+    }
 
-  .text-exact {
-    background: #FFFDE7;
-    border-left: 3px solid #FFD54F;
-    padding: 12px 16px;
-    margin: 8px 0;
-    border-radius: 0 6px 6px 0;
-    font-style: italic;
-  }
+    .overview table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-  .age-tags { margin: 8px 0; }
-  .age-tag {
-    display: inline-block;
-    font-size: 0.8em;
-    padding: 2px 10px;
-    border-radius: 12px;
-    margin-right: 8px;
-  }
-  .age-4 { background: #E8F5E9; color: #2E7D32; }
-  .age-6 { background: #E3F2FD; color: #1565C0; }
+    .overview td {
+      padding: 6px 12px;
+      vertical-align: top;
+    }
 
-  .elements-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
-  .elements-table th {
-    text-align: left;
-    padding: 8px 12px;
-    background: #F5F5F5;
-    font-size: 0.85em;
-    color: var(--muted);
-  }
-  .elements-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    .overview td:first-child {
+      font-weight: 600;
+      width: 180px;
+      color: var(--muted);
+    }
 
-  hr.divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 20px 0;
-  }
+    /* ─── Visual rules ─── */
+    .rules {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      padding: 24px 28px;
+      margin: 24px 0;
+    }
 
-  /* ─── Print ─── */
-  @media print {
-    body { background: white; }
-    .header { padding: 20px; }
-    .page-card { box-shadow: none; border: 1px solid #ddd; }
-    .container { max-width: 100%; }
-  }
-</style>
+    .rules h2 {
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .rules ul {
+      padding-left: 20px;
+    }
+
+    .rules li {
+      margin-bottom: 8px;
+    }
+
+    .rules strong {
+      color: var(--text);
+    }
+
+    /* ─── Page card ─── */
+    .page-card {
+      background: white;
+      border-radius: 12px;
+      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      page-break-inside: avoid;
+    }
+
+    .page-card-header {
+      background: var(--accent);
+      color: white;
+      padding: 16px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .page-card-header h2 {
+      font-size: 1.2em;
+    }
+
+    .page-badge {
+      background: rgba(255, 255, 255, 0.25);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+    }
+
+    .page-card-body {
+      padding: 28px;
+    }
+
+    /* ─── Wireframe ─── */
+    .wireframe {
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      background: #FAFAF8;
+      font-family: monospace;
+      font-size: 0.85em;
+      white-space: pre-line;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    /* ─── Sections within page ─── */
+    .section-label {
+      display: inline-block;
+      font-size: 0.75em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin: 20px 0 8px 0;
+    }
+
+    .label-illust {
+      background: #E8F5E9;
+      color: var(--green);
+    }
+
+    .label-text {
+      background: #E3F2FD;
+      color: var(--blue);
+    }
+
+    .label-interactive {
+      background: #F3E5F5;
+      color: var(--purple);
+    }
+
+    .label-note {
+      background: #FFF3E0;
+      color: #E65100;
+    }
+
+    .label-qr {
+      background: #FCE4EC;
+      color: #C62828;
+    }
+
+    .detail {
+      margin: 8px 0 16px 0;
+    }
+
+    .detail p {
+      margin-bottom: 6px;
+    }
+
+    .text-exact {
+      background: #FFFDE7;
+      border-left: 3px solid #FFD54F;
+      padding: 12px 16px;
+      margin: 8px 0;
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+    }
+
+    .age-tags {
+      margin: 8px 0;
+    }
+
+    .age-tag {
+      display: inline-block;
+      font-size: 0.8em;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-right: 8px;
+    }
+
+    .age-4 {
+      background: #E8F5E9;
+      color: #2E7D32;
+    }
+
+    .age-6 {
+      background: #E3F2FD;
+      color: #1565C0;
+    }
+
+    .elements-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+    }
+
+    .elements-table th {
+      text-align: left;
+      padding: 8px 12px;
+      background: #F5F5F5;
+      font-size: 0.85em;
+      color: var(--muted);
+    }
+
+    .elements-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 20px 0;
+    }
+
+    /* ─── Print ─── */
+    @media print {
+      body {
+        background: white;
+      }
+
+      .header {
+        padding: 20px;
+      }
+
+      .page-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+
+      .container {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ══════════════════════════════════════ HEADER ══════════════════════════════════════ -->
-<div class="header">
-  <h1>Creative Brief — Илюстраторско задание</h1>
-  <p>АЛФА | Тестов брой — „Суперсилите на моето тяло"</p>
-</div>
-
-<div class="container">
-
-<!-- ══════════════════════════════════════ OVERVIEW ══════════════════════════════════════ -->
-<div class="overview">
-  <h2>Обща информация</h2>
-  <table>
-    <tr><td>Проект</td><td>АЛФА — детско образователно хибридно списание</td></tr>
-    <tr><td>Тема на броя</td><td>„Суперсилите на моето тяло"</td></tr>
-    <tr><td>Целева възраст</td><td>4–7 години</td></tr>
-    <tr><td>Обем</td><td>8 страници + 1 грамота (9 общо)</td></tr>
-    <tr><td>Формат</td><td>A4 (210×297 мм), портретна ориентация</td></tr>
-    <tr><td>Герои</td><td><strong>Румба</strong> — момче на 5 г., любознателно, понякога се страхува, но е смело. <br><strong>Оскар</strong> — неговото куче, не говори, но разбира всичко. Бърза опашка, мокър нос, лупа.</td></tr>
-    <tr><td>Текстови слой</td><td>⚠️ <strong>ЗАДЪЛЖИТЕЛНО</strong> — Целият текст на отделен слой (за бъдеща локализация)</td></tr>
-    <tr><td>Файлов формат</td><td>Adobe Illustrator (.ai) — векторна графика</td></tr>
-  </table>
-</div>
-
-<!-- ══════════════════════════════════════ VISUAL RULES ══════════════════════════════════════ -->
-<div class="rules">
-  <h2>Визуални правила (за всички страници)</h2>
-  <ul>
-    <li><strong>Цветова палитра:</strong> Меки, пастелни или земни тонове (earth tones). Без неонови и крещящи RGB цветове. Успокояващи за детската нервна система, „премиум" усещане за родителя.</li>
-    <li><strong>Типография:</strong> Шрифт, четивен за деца, които тепърва сричат. Буквите „а", „т", „г" да са изписани както в букварите, а не като типографски варианти.</li>
-    <li><strong>Въздух (White space):</strong> Страниците НЕ трябва да са претрупани. Децата 4–7 г. се претоварват сензорно лесно. Оставяйте достатъчно празно пространство.</li>
-    <li><strong>Стил на илюстрациите:</strong> Flat vector, модерен, топъл. Вдъхновение: <a href="https://www.highlights.com">Highlights</a>, <a href="https://www.storytimemagazine.com">Storytime</a>, <a href="https://www.okido.com">Okido</a>. Героите да са последователни на всяка страница.</li>
-    <li><strong>Векторна графика:</strong> Всичко в Adobe Illustrator. Текст на отделен слой — критично за локализация.</li>
-  </ul>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 1 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 1 — Корица</h2>
-    <span class="page-badge">Хартия</span>
+  <!-- ══════════════════════════════════════ HEADER ══════════════════════════════════════ -->
+  <div class="header">
+    <h1>Creative Brief — Илюстраторско задание</h1>
+    <p>Оскар и Румбата | Тестов брой — „Суперсилите на моето тяло"</p>
   </div>
-  <div class="page-card-body">
 
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Централна сцена:</strong> Румба и Оскар са облекли импровизирани наметала от кърпи/хавлии. Румба е в героична поза — ръце на кръста, гледа напред. Оскар стои до него и държи лупа в устата си.</p>
-      <p><strong>Фон:</strong> Меки, топли цветове. Без претрупан фон — може лека абстрактна форма или нежен градиент.</p>
-      <p><strong>Настроение:</strong> Приключенско, весело, героично.</p>
-    </div>
+  <div class="container">
 
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│              [АЛФА]    ◻ Хибр. бадж │  ← Заглавие + бадж горе дясно
-│          Лого / заглавие            │
-│                                     │
-│   „Суперсилите на моето тяло"       │  ← Подзаглавие
-│                                     │
-│     ┌───────────────────────┐       │
-│     │                       │       │
-│     │   РУМБА + ОСКАР       │       │  ← Централна илюстрация
-│     │   (героична поза)     │       │
-│     │                       │       │
-│     │   🦴 🦴 🦴 (скрити)    │       │  ← 3–5 скрити кокалчета в илюстрацията
-│     │                       │       │
-│     └───────────────────────┘       │
-│                                     │
-│  💬 „Открий 3-те скрити кокалчета!" │  ← Балонче от Румба
-│                                     │
-│  „Принадлежи на: _______________"   │  ← Поле за име, долен край
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>Заглавие:</strong> АЛФА<br>
-      <strong>Подзаглавие:</strong> „Суперсилите на моето тяло"<br>
-      <strong>Бадж (горе дясно):</strong> 🔊 „Това списание оживява! Сканирай кодовете с телефона на мама или тати."<br>
-      <strong>Балонче на Румба:</strong> „Здравей, малък Откривателю! Знаеш ли, че ти си истински супергерой? Твоето тяло може да прави невероятни неща! Твоята първа задача — открий и огради 3-те скрити кокалчета на тази корица. Оскар ги е скрил някъде!"<br>
-      <strong>Долу:</strong> „Това специално издание принадлежи на: ........................"
-    </div>
-
-    <span class="section-label label-interactive">Интерактивни елементи</span>
-    <div class="detail">
-      <p>🦴 3–5 малки кокалчета, скрити в илюстрацията (в наметалото, в опашката на Оскар, в лупата, на фона)</p>
-      <p>Поле с пунктирана линия за вписване на име</p>
-    </div>
-
-    <div class="age-tags">
-      <span class="age-tag age-4">⭐ 4–5 г.: 3 кокалчета, по-видими</span>
-      <span class="age-tag age-6">⭐⭐ 6–7 г.: 5 кокалчета, добре скрити</span>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 2 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 2 — „Как работи това списание?"</h2>
-    <span class="page-badge">Хартия</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Горна половина:</strong> Чиста, текстова — обръщение към родителя. Минимална декорация.</p>
-      <p><strong>3 стъпки:</strong> Три големи кръгли икони в ред (📖 → 📱 → 🔄) със стрелки между тях.</p>
-      <p><strong>Долна половина:</strong> Оскар, който „говори" в балонче. Седнал, дружелюбна поза, вдига лапа.</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│  „Скъпи родителю,"                 │
-│  [кратък текст — 3 реда]           │  ← Обръщение
-│                                     │
-│  ┌─────┐    ┌─────┐    ┌─────┐     │
-│  │ 📖  │ →  │ 📱  │ →  │ 🔄  │     │  ← 3 стъпки с икони
-│  │Стъп.1│   │Стъп.2│   │Стъп.3│    │
-│  └─────┘    └─────┘    └─────┘     │
-│  Разгледай   Сканирай   Върни се   │
-│  и направи   кода       към хартия │
-│─────────────────────────────────────│
-│                                     │
-│     🐕 Оскар                        │
-│     💬 „Хей, Откривателю!           │  ← Балонче — обръщение към детето
-│      📱 = телефон                    │
-│      ✏️ = моливи                    │
-│      ✂️ = ножичка"                  │
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>Обръщение към родителя:</strong> „Скъпи родителю, държите в ръцете си нещо различно — списание, което оживява. Вашето дете ще рисува, ще решава задачи и ще слуша истории, като преминава плавно между хартията и екрана. Няма нужда от приложение — само камерата на вашия телефон."<br><br>
-      <strong>Стъпка 1:</strong> „Разгледай и направи — Детето работи със страниците: рисува, решава, изрязва."<br>
-      <strong>Стъпка 2:</strong> „Сканирай кода — Когато видите знака 📱, насочете камерата на телефона към QR кода."<br>
-      <strong>Стъпка 3:</strong> „Върни се към хартията — След дигиталното съдържание, детето продължава на следващата страница. Екранът е мост, не дестинация."<br><br>
-      <strong>Балонче на Оскар:</strong> „Хей, Откривателю! Виждаш ли тези знаци? Когато видиш 📱 — помоли мама или тати да ти помогнат с телефона. Когато видиш ✏️ — грабвай моливите! А когато видиш ✂️ — ще ти трябва ножичка. Готов ли си? Да тръгваме!"
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 3 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 3 — „Какво чувства моят корем?" (История)</h2>
-    <span class="page-badge">Хибрид — QR аудио</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Сцена:</strong> Румба седи на ръба на леглото, свит, ръце на корема. Оскар е допрял мокрия си нос до ръката му.</p>
-      <p><strong>Обстановка:</strong> Детска стая, сутрешна светлина от прозореца. На нощното шкафче — будилник. На пода — тениска с динозавър.</p>
-      <p><strong>Настроение:</strong> Топло, интимно, леко тъжно но нежно. Не мрачно!</p>
-      <p><strong>Размер:</strong> Илюстрацията заема горната половина на страницата. Текстът е в долната.</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│                                     │
-│     ┌───────────────────────┐       │
-│     │                       │       │
-│     │   РУМБА на леглото    │       │  ← Голяма илюстрация (50% от стр.)
-│     │   ОСКАР до него       │       │
-│     │   Сутрешна светлина   │       │
-│     │                       │       │
-│     └───────────────────────┘       │
-│                                     │
-│  Текст на приказката...             │  ← Текст (цялата история)
-│  „Мамо, коремчето ме боли..."       │
-│  ...                                │
-│  ...                                │
-│  „Пеперудите в корема ми вече       │
-│   не се блъскат, а танцуват!"       │
-│                                     │
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      Беше вторник сутрин. 5-годишният Румба седеше на ръба на леглото си и не искаше да облече любимата си тениска с динозавър.<br><br>
-      — Мамо, коремчето ме боли — прошепна той. — Сякаш вътре имам стегнат възел.<br><br>
-      Кучето Оскар, което винаги разбираше всичко, веднага дотърча. Оскар не можеше да говори, но допря топлия си мокър нос до ръката на Румба и тихо изсвирука. Той знаеше, че днес в детската градина щеше да има голямо тържество и Румба трябваше да каже едно стихотворение пред всички.<br><br>
-      Мама седна до тях и прегърна Румба.<br><br>
-      — Знаеш ли, Румба — каза тя, — понякога коремчето ни говори вместо сърцето. Когато се притесняваме за нещо ново, тялото ни прави този малък „възел", за да ни каже: „Хей, вълнувам се!". Дори Оскар понякога го усеща — виж как трепкат ушичките му, когато чака пред вратата.<br><br>
-      Румба погледна Оскар. Кучето замаха с опашка и започна да диша учестено: „Пфу-пфу-пфу".<br><br>
-      — Хайде да опитаме една суперсила — предложи мама. — Сложи ръка на коремчето си. Сега поеми въздух през носа, сякаш помирисваш най-вкусната палачинка на света... и издишай бавно през устата, сякаш духаш глухарче.<br><br>
-      Румба вдиша. Оскар също наостри нос. Вдишване... Издишване... След три вдишвания „възелът" в корема на Румба започна да се разхлабва.<br><br>
-      — Оскар, виж! — засмя се Румба. — Пеперудите в корема ми вече не се блъскат, а танцуват!<br><br>
-      Той облече тениската с динозавъра, погали Оскар по главата и разбра: неговото тяло е неговият най-добър приятел, който винаги му казва как се чувства.
-    </div>
-
-    <span class="section-label label-note">Бележка</span>
-    <div class="detail">
-      <p>Ако текстът не се побира на 1 страница, може да заеме и началото на стр. 4. Историята трябва да е четива — достатъчно голям шрифт за родителя, който чете на глас.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 4 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 4 — Активност + QR към аудио</h2>
-    <span class="page-badge">Хибрид — QR аудио</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Празен силует</strong> на детско тяло (контур, без детайли вътре). Достатъчно голям, за да може дете да оцвети вътре.</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│                                     │
-│  ✏️ „А ти усещал ли си „възел"      │
-│   или „пеперуди" в коремчето си?"  │
-│                                     │
-│       ┌─────────────┐              │
-│       │             │              │
-│       │  СИЛУЕТ на  │              │  ← Празен контур на детско тяло
-│       │  детско     │              │     за оцветяване
-│       │  тяло       │              │
-│       │             │              │
-│       └─────────────┘              │
-│                                     │
-│  ⭐ Оцвети където усещаш емоцията  │
-│  ⭐⭐ + Напиши какво те кара да     │
-│      се чувстваш така              │
-│─────────────────────────────────────│
-│                                     │
-│  📱 СКАНИРАЙ МЕ!          [QR]     │  ← QR код — аудио драматизация
-│  „Чуй приказката за Румба..."      │
-│                                     │
-│─────────────────────────────────────│
-│  💡 Бележка за родителя             │  ← Малък текст, сив/приглушен
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>Инструкция:</strong> „А ти усещал ли си някога „възел" или „пеперуди" в коремчето си? Нарисувай в силуета отдолу какъв цвят е твоето вълнение днес."<br><br>
-      <strong>QR секция:</strong> 📱 „Сканирай ме!" — „Чуй приказката за Румба и „възела" в коремчето, разказана от [Име на актьор/актриса]. Можеш да слушаш и да гледаш картинката, или да си затвориш очите."<br><br>
-      <strong>Бележка за родителя:</strong> „Възелът в коремчето" не е просто израз — на тази възраст децата често изпитват силните емоции като физическо неразположение (соматизация). Като именуваме усещането чрез образи, ние помагаме на детето да разбере, че емоцията е нормална. Техниката „палачинка и глухарче" активира парасимпатиковата нервна система и дава на детето инструмент за саморегулация.
-    </div>
-
-    <span class="section-label label-interactive">Интерактивни елементи</span>
-    <div class="detail">
-      <p>Празен силует на детско тяло — зона за оцветяване</p>
-      <p>QR код placeholder (ще бъде генериран отделно)</p>
-    </div>
-
-    <span class="section-label label-qr">Дигитално съдържание (за справка)</span>
-    <div class="detail">
-      <p>Аудио драматизация (2–3 мин.): професионален актьор, фонова музика, звукови ефекти (Оскар изсвирукава, сутрешни звуци). Завършва с водено дихателно упражнение „палачинка и глухарче".</p>
-    </div>
-
-    <div class="age-tags">
-      <span class="age-tag age-4">⭐ 4–5 г.: Оцветяване на готов силует</span>
-      <span class="age-tag age-6">⭐⭐ 6–7 г.: + „Напиши какво те кара да се чувстваш така"</span>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 5 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 5 — „Командният център и 5-те сетива"</h2>
-    <span class="page-badge">Хартия</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Горе:</strong> Малък Румба, сочи главата си с балонче.</p>
-      <p><strong>Задача 1:</strong> Стилизирана глава на Румба (горе) свързана чрез лабиринт от вълнообразни пътечки с ръка (долу), протегната към Оскар.</p>
-      <p><strong>Задача 2:</strong> Две колони с по 5 картинки за свързване.</p>
-      <p><strong>Задача 3:</strong> Празно поле в долната част.</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│  🧒 Румба: „Мозъкът ти е            │
-│   Команден център!"                 │
-│                                     │
-│  ЗАДАЧА 1 — Лабиринт               │
-│  ┌─────┐                            │
-│  │МОЗЪК│ ~~~ вълнообразни ~~~ 🖐️→🐕│  ← Лабиринт: мозък → ръка → Оскар
-│  └─────┘     пътечки               │
-│                                     │
-│  ЗАДАЧА 2 — Свържи сетивата         │
-│  👁️  ───────  🌈 Дъга              │
-│  👂  ───────  🐕 Лаещ Оскар        │  ← 5+5 картинки за свързване
-│  👃  ───────  🌸 Цвете              │
-│  👅  ───────  🍦 Сладолед           │
-│  🖐️  ───────  🧣 Одеяло            │
-│                                     │
-│  ЗАДАЧА 3 — Очертай ръка            │
-│  ┌─────────────────────┐            │
-│  │   ПРАЗНО ПОЛЕ        │           │  ← Детето слага ръка и очертава
-│  │   „Сложи ръката си"  │           │
-│  └─────────────────────┘            │
-│  💡 Бележка за родителя             │
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>Балонче на Румба:</strong> „Знаеш ли, че мозъкът ти е истински Команден център? Той управлява всичко — от пръстите на краката до върха на носа! А сега — три мисии за теб!"<br><br>
-      <strong>Задача 1:</strong> „Румба иска да погали Оскар, но сигналът трябва да стигне от мозъка до ръката! Помогни му да намери пътя."<br><br>
-      <strong>Задача 2:</strong> „С коя суперсила усещаш тези неща? Свържи всяка картинка с правилното сетиво!"<br><br>
-      <strong>Задача 3:</strong> „Сложи ръката си тук и я очертай с молив. Това е твоят инструмент — с него можеш да твориш, да помагаш и да прегръщаш! Оцвети я в любимия си цвят."<br><br>
-      <strong>Бележка за родителя:</strong> „На възраст 4–7 години координацията око-ръка е в основата на бъдещото писане. Лабиринтите тренират фината моторика, а очертаването на ръката развива „схемата на тялото"."
-    </div>
-
-    <span class="section-label label-interactive">Интерактивни елементи</span>
-    <div class="detail">
-      <p>Лабиринт — вълнообразни пътечки с 2–3 грешни пътя</p>
-      <p>Линии за свързване — 5 двойки</p>
-      <p>Празно поле ~15×12 см за очертаване на ръка</p>
-    </div>
-
-    <div class="age-tags">
-      <span class="age-tag age-4">⭐ Задача 1 и 2 — за всички възрасти</span>
-      <span class="age-tag age-6">⭐⭐ Задача 3 допълнително: „Върху всеки пръст нарисувай нещо, което ръката ти може да прави"</span>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 6 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 6 — „Построй своя супергерой!"</h2>
-    <span class="page-badge">Хартия — изрязване</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Основна задача:</strong> Анатомична „пъзел-кукла" — фигура на дете, разделена на части с пунктирани линии за изрязване. Във всяка част се вижда опростен вътрешен орган.</p>
-      <p><strong>Стил:</strong> Дружелюбен, не медицински. Органите са нарисувани мило и цветно.</p>
-      <p><strong>Малък Оскар</strong> в ъгъла с балонче за инструкция.</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│  🐕 Оскар: ✂️ „Време е за           │
-│   ножичката! Изрежи частите..."     │
-│                                     │
-│     ┌─────────┐                     │
-│     │  ГЛАВА  │ ← Мозък вътре      │
-│  ┌──┴─────────┴──┐                  │
-│  │    ГЪРДИ      │ ← Сърце, бели   │  ← Всички части с пунктир
-│  │               │    дробове       │     за изрязване
-│  ├───────────────┤                  │
-│  │    КОРЕМ      │ ← Стомах         │
-│  │  „пеперуди"   │   + пеперуди!   │
-│  └──┬─────────┬──┘                  │
-│  ┌──┘         └──┐                  │
-│  │КРАК│     │КРАК│ ← Кости         │
-│  └────┘     └────┘                  │
-│       ✋ ✋  ← Ръце отстрани        │
-│                                     │
-│  „Когато сглобиш, покажи къде е    │
-│   Командният център!"               │
-│  💡 Бележка за родителя             │
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>Балонче на Оскар:</strong> ✂️ „Време е за ножичката! Изрежи частите на тялото и ги подреди правилно. Можеш да ги залепиш на лист или да ги свържеш с кламери, за да се движат!"<br><br>
-      <strong>След сглобяване:</strong> „Когато сглобиш фигурата, покажи къде е Командният център. А къде живеят пеперудите от историята на Румба?"<br><br>
-      <strong>Бележка за родителя:</strong> „Изрязването е едно от най-важните упражнения за фината моторика в предучилищна възраст. Ако детето ви е на 4 години и се затруднява, изрежете частите вие и му оставете задачата да ги подреди и залепи."
-    </div>
-
-    <span class="section-label label-interactive">Елементи за изрязване</span>
-    <div class="detail">
-      <table class="elements-table">
-        <tr><th>Част</th><th>Какво се вижда вътре</th></tr>
-        <tr><td>Глава</td><td>Мозък (Командният център!)</td></tr>
-        <tr><td>Гърди</td><td>Сърце и бели дробове</td></tr>
-        <tr><td>Корем</td><td>Стомах („къщичката на пеперудите")</td></tr>
-        <tr><td>Ръце (×2)</td><td>Кости и мускули</td></tr>
-        <tr><td>Крака (×2)</td><td>Кости и мускули</td></tr>
+    <!-- ══════════════════════════════════════ OVERVIEW ══════════════════════════════════════ -->
+    <div class="overview">
+      <h2>Обща информация</h2>
+      <table>
+        <tr>
+          <td>Проект</td>
+          <td>Оскар и Румбата — детско образователно хибридно списание</td>
+        </tr>
+        <tr>
+          <td>Тема на броя</td>
+          <td>„Суперсилите на моето тяло"</td>
+        </tr>
+        <tr>
+          <td>Целева възраст</td>
+          <td>4–7 години</td>
+        </tr>
+        <tr>
+          <td>Обем</td>
+          <td>8 страници + 1 грамота (9 общо)</td>
+        </tr>
+        <tr>
+          <td>Формат</td>
+          <td>A4 (210×297 мм), портретна ориентация</td>
+        </tr>
+        <tr>
+          <td>Герои</td>
+          <td><strong>Румба</strong> — момче на 5 г., любознателно, понякога се страхува, но е смело.
+            <br><strong>Оскар</strong> — умно и дружелюбно куче-робот, което може да говори. Мил електронен глас,
+            светещи очи-сензори, метална опашка, лупа.</td>
+        </tr>
+        <tr>
+          <td>Текстови слой</td>
+          <td>⚠️ <strong>ЗАДЪЛЖИТЕЛНО</strong> — Целият текст на отделен слой (за бъдеща локализация)</td>
+        </tr>
+        <tr>
+          <td>Файлов формат</td>
+          <td>Adobe Illustrator (.ai) — векторна графика</td>
+        </tr>
       </table>
-      <p>Пунктирани линии за рязане — дебели, ясни контури.</p>
-      <p>Малки кръгчета на ставите за кламери (опционално).</p>
     </div>
 
-    <div class="age-tags">
-      <span class="age-tag age-4">⭐ 4–5 г.: 5 едри части, прости контури, дебели линии</span>
-      <span class="age-tag age-6">⭐⭐ 6–7 г.: 7 части (+стъпала, длани), детето надписва органите</span>
+    <!-- ══════════════════════════════════════ VISUAL RULES ══════════════════════════════════════ -->
+    <div class="rules">
+      <h2>Визуални правила (за всички страници)</h2>
+      <ul>
+        <li><strong>Цветова палитра:</strong> Меки, пастелни или земни тонове (earth tones). Без неонови и крещящи RGB
+          цветове. Успокояващи за детската нервна система, „премиум" усещане за родителя.</li>
+        <li><strong>Типография:</strong> Шрифт, четивен за деца, които тепърва сричат. Буквите „а", „т", „г" да са
+          изписани както в букварите, а не като типографски варианти.</li>
+        <li><strong>Въздух (White space):</strong> Страниците НЕ трябва да са претрупани. Децата 4–7 г. се претоварват
+          сензорно лесно. Оставяй достатъчно празно пространство.</li>
+        <li><strong>Стил на илюстрациите:</strong> Flat vector, модерен, топъл. Вдъхновение: Highlights, Storytime,
+          Okido. Героите да са последователни на всяка страница.</li>
+        <li><strong>Векторна графика:</strong> Всичко в Adobe Illustrator. Текст на отделен слой — критично за
+          локализация.</li>
+      </ul>
     </div>
+
+    <!-- ══════════════════════════════════════ REFERENCES ══════════════════════════════════════ -->
+    <div class="rules" style="background: #E3F2FD; border-left-color: var(--blue);">
+      <h2 style="color: var(--blue);">Референции за съдържание (Задачи и пъзели)</h2>
+      <p style="margin-bottom: 8px;">Разгледай следния Pinterest борд за примерни активности, пъзели и образователни задачи. Обърни внимание на изчистения дизайн, начина по който се подреждат елементите за свързване (лабиринти, съпоставяне), и как се оставя достатъчно пространство (white space) за рисуване и писане.</p>
+      <p style="margin: 8px 0 16px 0;">
+        <a href="https://www.pinterest.com/stalimirov/puzzles-for-kids/" target="_blank"
+          style="color: var(--blue); font-weight: bold; font-size: 0.95em;">
+          🔗 Отвори борда в Pinterest →
+        </a>
+      </p>
+      <!-- Pinterest Board Widget (official embed) -->
+      <div style="overflow: hidden; border-radius: 8px; margin-top: 8px;">
+        <a data-pin-do="embedBoard"
+           data-pin-board-width="860"
+           data-pin-scale-height="300"
+           data-pin-scale-width="80"
+           href="https://www.pinterest.com/stalimirov/puzzles-for-kids/">
+        </a>
+      </div>
+      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 1 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 1 — Корица</h2>
+        <span class="page-badge">Хартия</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Централна сцена:</strong> Румба и Оскар са облекли импровизирани наметала от кърпи/хавлии. Румба е
+            в героична поза — ръце на кръста, гледа напред. Оскар стои до него и държи лупа с лапата си.</p>
+          <p><strong>Фон:</strong> Меки, топли цветове. Без претрупан фон — може лека абстрактна форма или нежен
+            градиент.</p>
+          <p><strong>Настроение:</strong> Приключенско, весело, героично.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ [ОСКАР И РУМБАТА] ◻ Хибр. бадж │ ← Заглавие + бадж горе дясно
+          │ Лого / заглавие │
+          │ │
+          │ „Суперсилите на моето тяло" │ ← Подзаглавие
+          │ │
+          │ ┌───────────────────────┐ │
+          │ │ │ │
+          │ │ РУМБА + ОСКАР │ │ ← Централна илюстрация
+          │ │ (героична поза) │ │
+          │ │ │ │
+          │ │ 🦴 🦴 🦴 (скрити) │ │ ← 3–5 скрити кокалчета в илюстрацията
+          │ │ │ │
+          │ └───────────────────────┘ │
+          │ │
+          │ 💬 „Открий 3-те скрити кокалчета!" │ ← Балонче от Румба
+          │ │
+          │ „Принадлежи на: _______________" │ ← Поле за име, долен край
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>Заглавие:</strong> ОСКАР И РУМБАТА: Списание за откриватели<br>
+          <strong>Подзаглавие:</strong> „Суперсилите на моето тяло"<br>
+          <strong>Бадж (горе дясно):</strong> 🔊 „Това списание оживява! Сканирай кодовете с телефона на мама или
+          тати."<br>
+          <strong>Балонче на Румба:</strong> „Здравей, малък Откривателю! Знаеш ли, че ти си истински супергерой? Твоето
+          тяло може да прави невероятни неща! Твоята първа задача — открий и огради 3-те скрити кокалчета на тази
+          корица. Оскар ги е скрил някъде!"<br>
+          <strong>Долу:</strong> „Това специално издание принадлежи на: ........................"
+        </div>
+
+        <span class="section-label label-interactive">Интерактивни елементи</span>
+        <div class="detail">
+          <p>🦴 3–5 малки кокалчета, скрити в илюстрацията (в наметалото, в опашката на Оскар, в лупата, на фона)</p>
+          <p>Поле с пунктирана линия за вписване на име</p>
+        </div>
+
+        <div class="age-tags">
+          <span class="age-tag age-4">⭐ 4–5 г.: 3 кокалчета, по-видими</span>
+          <span class="age-tag age-6">⭐⭐ 6–7 г.: 5 кокалчета, добре скрити</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 2 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 2 — „Как работи това списание?"</h2>
+        <span class="page-badge">Хартия</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Горна половина:</strong> Чиста, текстова — обръщение към родителя. Минимална декорация.</p>
+          <p><strong>3 стъпки:</strong> Три големи кръгли икони в ред (📖 → 📱 → 🔄) със стрелки между тях.</p>
+          <p><strong>Долна половина:</strong> Оскар, който „говори" в балонче. Седнал, дружелюбна поза, вдига лапа.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ „Скъпи родителю," │
+          │ [кратък текст — 3 реда] │ ← Обръщение
+          │ │
+          │ ┌─────┐ ┌─────┐ ┌─────┐ │
+          │ │ 📖 │ → │ 📱 │ → │ 🔄 │ │ ← 3 стъпки с икони
+          │ │Стъп.1│ │Стъп.2│ │Стъп.3│ │
+          │ └─────┘ └─────┘ └─────┘ │
+          │ Разгледай Сканирай Върни се │
+          │ и направи кода към хартия │
+          │─────────────────────────────────────│
+          │ │
+          │ 🐕 Оскар │
+          │ 💬 „Хей, Откривателю! │ ← Балонче — обръщение към детето
+          │ 📱 = телефон │
+          │ ✏️ = моливи │
+          │ ✂️ = ножичка" │
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>Обръщение към родителя:</strong> „Скъпи родителю, държиш в ръцете си нещо различно — списание, което
+          оживява. Твоето дете ще рисува, ще решава задачи и ще слуша истории, като преминава плавно между хартията и
+          екрана. Няма нужда от приложение — само камерата на твоя телефон."<br><br>
+          <strong>Стъпка 1:</strong> „Разгледай и направи — Детето работи със страниците: рисува, решава, изрязва."<br>
+          <strong>Стъпка 2:</strong> „Сканирай кода — Когато видиш знака 📱, насочи камерата на телефона към QR
+          кода."<br>
+          <strong>Стъпка 3:</strong> „Върни се към хартията — След дигиталното съдържание, детето продължава на
+          следващата страница. Екранът е мост, не дестинация."<br><br>
+          <strong>Балонче на Оскар:</strong> „Хей, Откривателю! Виждаш ли тези знаци? Когато видиш 📱 — помоли мама или
+          тати да ти помогнат с телефона. Когато видиш ✏️ — грабвай моливите! А когато видиш ✂️ — ще ти трябва ножичка.
+          Готов ли си? Да тръгваме!"
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 3 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 3 — „Какво чувства моят корем?" (История)</h2>
+        <span class="page-badge">Хибрид — QR аудио</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Сцена:</strong> Румба седи на ръба на леглото, свит, ръце на корема. Оскар е допрял мокрия си нос
+            до ръката му.</p>
+          <p><strong>Обстановка:</strong> Детска стая, сутрешна светлина от прозореца. На нощното шкафче — будилник. На
+            пода — тениска с динозавър.</p>
+          <p><strong>Настроение:</strong> Топло, интимно, леко тъжно но нежно. Не мрачно!</p>
+          <p><strong>Размер:</strong> Илюстрацията заема горната половина на страницата. Текстът е в долната.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ │
+          │ ┌───────────────────────┐ │
+          │ │ │ │
+          │ │ РУМБА на леглото │ │ ← Голяма илюстрация (50% от стр.)
+          │ │ ОСКАР до него │ │
+          │ │ Сутрешна светлина │ │
+          │ │ │ │
+          │ └───────────────────────┘ │
+          │ │
+          │ Текст на приказката... │ ← Текст (цялата история)
+          │ „Мамо, коремчето ме боли..." │
+          │ ... │
+          │ ... │
+          │ „Пеперудите в корема ми вече │
+          │ не се блъскат, а танцуват!" │
+          │ │
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          Беше вторник сутрин. 5-годишният Румба седеше на ръба на леглото си и не искаше да облече любимата си тениска
+          с динозавър.<br><br>
+          — Мамо, коремчето ме боли — прошепна той. — Сякаш вътре имам стегнат възел.<br><br>
+          Кучето-робот Оскар, което винаги разбираше всичко, веднага дотърча. Оскар допря металния си нос до ръката на
+          Румба и каза с мекия си, роботизиран глас:<br>— Засечен е спад в настроението. Всичко наред ли е?<br>Той
+          знаеше, че днес в детската градина щеше да има голямо тържество и Румба трябваше да каже едно стихотворение
+          пред всички.<br><br>
+          Мама седна до тях и прегърна Румба.<br><br>
+          — Знаеш ли, Румба — каза тя, — понякога коремчето ни говори вместо сърцето. Когато се притесняваме за нещо
+          ново, тялото ни прави този малък „възел", за да ни каже: „Хей, вълнувам се!". Дори сензорите на Оскар понякога
+          се объркват и загряват, когато опитва нещо съвсем ново.<br><br>
+          Румба погледна Оскар. Очите на роботчето светнаха в успокояващо синьо, а металната му опашка затропа:
+          „трак-трак-трак".<br><br>
+          — Хайде да опитаме една суперсила — предложи мама. — Сложи ръка на коремчето си. Сега поеми въздух през носа,
+          сякаш помирисваш най-вкусната палачинка на света... и издишай бавно през устата, сякаш духаш глухарче.<br><br>
+          Румба вдиша. Оскар също наостри нос. Вдишване... Издишване... След три вдишвания „възелът" в корема на Румба
+          започна да се разхлабва.<br><br>
+          — Оскар, виж! — засмя се Румба. — Пеперудите в корема ми вече не се блъскат, а танцуват!<br><br>
+          Той облече тениската с динозавъра, погали Оскар по главата и разбра: неговото тяло е неговият най-добър
+          приятел, който винаги му казва как се чувства.
+        </div>
+
+        <span class="section-label label-note">Бележка</span>
+        <div class="detail">
+          <p>Ако текстът не се побира на 1 страница, може да заеме и началото на стр. 4. Историята трябва да е четива —
+            достатъчно голям шрифт за родителя, който чете на глас.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 4 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 4 — Активност + QR към аудио</h2>
+        <span class="page-badge">Хибрид — QR аудио</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Празен силует</strong> на детско тяло (контур, без детайли вътре). Достатъчно голям, за да може
+            дете да оцвети вътре.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ │
+          │ ✏️ „А ти усещал ли си „възел" │
+          │ или „пеперуди" в коремчето си?" │
+          │ │
+          │ ┌─────────────┐ │
+          │ │ │ │
+          │ │ СИЛУЕТ на │ │ ← Празен контур на детско тяло
+          │ │ детско │ │ за оцветяване
+          │ │ тяло │ │
+          │ │ │ │
+          │ └─────────────┘ │
+          │ │
+          │ ⭐ Оцвети където усещаш емоцията │
+          │ ⭐⭐ + Напиши какво те кара да │
+          │ се чувстваш така │
+          │─────────────────────────────────────│
+          │ │
+          │ 📱 СКАНИРАЙ МЕ! [QR] │ ← QR код — аудио драматизация
+          │ „Чуй приказката за Румба..." │
+          │ │
+          │─────────────────────────────────────│
+          │ 💡 Бележка за родителя │ ← Малък текст, сив/приглушен
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>Инструкция:</strong> „А ти усещал ли си някога „възел" или „пеперуди" в коремчето си? Нарисувай в
+          силуета отдолу какъв цвят е твоето вълнение днес."<br><br>
+          <strong>QR секция:</strong> 📱 „Сканирай ме!" — „Чуй приказката за Румба и „възела" в коремчето, разказана от
+          [Име на актьор/актриса]. Можеш да слушаш и да гледаш картинката, или да си затвориш очите."<br><br>
+          <strong>Бележка за родителя:</strong> „Възелът в коремчето" не е просто израз — на тази възраст децата често
+          изпитват силните емоции като физическо неразположение (соматизация). Като именуваме усещането чрез образи, ние
+          помагаме на детето да разбере, че емоцията е нормална. Техниката „палачинка и глухарче" активира
+          парасимпатиковата нервна система и дава на детето инструмент за саморегулация.
+        </div>
+
+        <span class="section-label label-interactive">Интерактивни елементи</span>
+        <div class="detail">
+          <p>Празен силует на детско тяло — зона за оцветяване</p>
+          <p>QR код placeholder (ще бъде генериран отделно)</p>
+        </div>
+
+        <span class="section-label label-qr">Дигитално съдържание (за справка)</span>
+        <div class="detail">
+          <p>Аудио драматизация (2–3 мин.): професионален актьор, фонова музика, звукови ефекти (цифровия електронен
+            глас на Оскар, сутрешни звуци). Завършва с водено дихателно упражнение „палачинка и глухарче".</p>
+        </div>
+
+        <div class="age-tags">
+          <span class="age-tag age-4">⭐ 4–5 г.: Оцветяване на готов силует</span>
+          <span class="age-tag age-6">⭐⭐ 6–7 г.: + „Напиши какво те кара да се чувстваш така"</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 5 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 5 — „Командният център и 5-те сетива"</h2>
+        <span class="page-badge">Хартия</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Горе:</strong> Малък Румба, сочи главата си с балонче.</p>
+          <p><strong>Задача 1:</strong> Стилизирана глава на Румба (горе) свързана чрез лабиринт от вълнообразни пътечки
+            с ръка (долу), протегната към Оскар.</p>
+          <p><strong>Задача 2:</strong> Две колони с по 5 картинки за свързване.</p>
+          <p><strong>Задача 3:</strong> Празно поле в долната част.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ 🧒 Румба: „Мозъкът ти е │
+          │ Команден център!" │
+          │ │
+          │ ЗАДАЧА 1 — Лабиринт │
+          │ ┌─────┐ │
+          │ │МОЗЪК│ ~~~ вълнообразни ~~~ 🖐️→🐕│ ← Лабиринт: мозък → ръка → Оскар
+          │ └─────┘ пътечки │
+          │ │
+          │ ЗАДАЧА 2 — Свържи сетивата │
+          │ 👁️ ─────── 🌈 Дъга │
+          │ 👂 ─────── 🐕 Лаещ Оскар │ ← 5+5 картинки за свързване
+          │ 👃 ─────── 🌸 Цвете │
+          │ 👅 ─────── 🍦 Сладолед │
+          │ 🖐️ ─────── 🧣 Одеяло │
+          │ │
+          │ ЗАДАЧА 3 — Очертай ръка │
+          │ ┌─────────────────────┐ │
+          │ │ ПРАЗНО ПОЛЕ │ │ ← Детето слага ръка и очертава
+          │ │ „Сложи ръката си" │ │
+          │ └─────────────────────┘ │
+          │ 💡 Бележка за родителя │
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>Балонче на Румба:</strong> „Знаеш ли, че мозъкът ти е истински Команден център? Той управлява всичко —
+          от пръстите на краката до върха на носа! А сега — три мисии за теб!"<br><br>
+          <strong>Задача 1:</strong> „Румба иска да погали Оскар, но сигналът трябва да стигне от мозъка до ръката!
+          Помогни му да намери пътя."<br><br>
+          <strong>Задача 2:</strong> „С коя суперсила усещаш тези неща? Свържи всяка картинка с правилното
+          сетиво!"<br><br>
+          <strong>Задача 3:</strong> „Сложи ръката си тук и я очертай с молив. Това е твоят инструмент — с него можеш да
+          твориш, да помагаш и да прегръщаш! Оцвети я в любимия си цвят."<br><br>
+          <strong>Бележка за родителя:</strong> „На възраст 4–7 години координацията око-ръка е в основата на бъдещото
+          писане. Лабиринтите тренират фината моторика, а очертаването на ръката развива „схемата на тялото"."
+        </div>
+
+        <span class="section-label label-interactive">Интерактивни елементи</span>
+        <div class="detail">
+          <p>Лабиринт — вълнообразни пътечки с 2–3 грешни пътя</p>
+          <p>Линии за свързване — 5 двойки</p>
+          <p>Празно поле ~15×12 см за очертаване на ръка</p>
+        </div>
+
+        <div class="age-tags">
+          <span class="age-tag age-4">⭐ Задача 1 и 2 — за всички възрасти</span>
+          <span class="age-tag age-6">⭐⭐ Задача 3 допълнително: „Върху всеки пръст нарисувай нещо, което ръката ти може
+            да прави"</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 6 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 6 — „Построй своя супергерой!"</h2>
+        <span class="page-badge">Хартия — изрязване</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Основна задача:</strong> Анатомична „пъзел-кукла" — фигура на дете, разделена на части с пунктирани
+            линии за изрязване. Във всяка част се вижда опростен вътрешен орган.</p>
+          <p><strong>Стил:</strong> Дружелюбен, не медицински. Органите са нарисувани мило и цветно.</p>
+          <p><strong>Малък Оскар</strong> в ъгъла с балонче за инструкция.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ 🐕 Оскар: ✂️ „Време е за │
+          │ ножичката! Изрежи частите..." │
+          │ │
+          │ ┌─────────┐ │
+          │ │ ГЛАВА │ ← Мозък вътре │
+          │ ┌──┴─────────┴──┐ │
+          │ │ ГЪРДИ │ ← Сърце, бели │ ← Всички части с пунктир
+          │ │ │ дробове │ за изрязване
+          │ ├───────────────┤ │
+          │ │ КОРЕМ │ ← Стомах │
+          │ │ „пеперуди" │ + пеперуди! │
+          │ └──┬─────────┬──┘ │
+          │ ┌──┘ └──┐ │
+          │ │КРАК│ │КРАК│ ← Кости │
+          │ └────┘ └────┘ │
+          │ ✋ ✋ ← Ръце отстрани │
+          │ │
+          │ „Когато сглобиш, покажи къде е │
+          │ Командният център!" │
+          │ 💡 Бележка за родителя │
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>Балонче на Оскар:</strong> ✂️ „Време е за ножичката! Изрежи частите на тялото и ги подреди правилно.
+          Можеш да ги залепиш на лист или да ги свържеш с кламери, за да се движат!"<br><br>
+          <strong>След сглобяване:</strong> „Когато сглобиш фигурата, покажи къде е Командният център. А къде живеят
+          пеперудите от историята на Румба?"<br><br>
+          <strong>Бележка за родителя:</strong> „Изрязването е едно от най-важните упражнения за фината моторика в
+          предучилищна възраст. Ако детето ти е на 4 години и се затруднява, изрежи частите ти и му остави задачата
+          да ги подреди и залепи."
+        </div>
+
+        <span class="section-label label-interactive">Елементи за изрязване</span>
+        <div class="detail">
+          <table class="elements-table">
+            <tr>
+              <th>Част</th>
+              <th>Какво се вижда вътре</th>
+            </tr>
+            <tr>
+              <td>Глава</td>
+              <td>Мозък (Командният център!)</td>
+            </tr>
+            <tr>
+              <td>Гърди</td>
+              <td>Сърце и бели дробове</td>
+            </tr>
+            <tr>
+              <td>Корем</td>
+              <td>Стомах („къщичката на пеперудите")</td>
+            </tr>
+            <tr>
+              <td>Ръце (×2)</td>
+              <td>Кости и мускули</td>
+            </tr>
+            <tr>
+              <td>Крака (×2)</td>
+              <td>Кости и мускули</td>
+            </tr>
+          </table>
+          <p>Пунктирани линии за рязане — дебели, ясни контури.</p>
+          <p>Малки кръгчета на ставите за кламери (опционално).</p>
+        </div>
+
+        <div class="age-tags">
+          <span class="age-tag age-4">⭐ 4–5 г.: 5 едри части, прости контури, дебели линии</span>
+          <span class="age-tag age-6">⭐⭐ 6–7 г.: 7 части (+стъпала, длани), детето надписва органите</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 7 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 7 — Експеримент „Мощната буря в чаша"</h2>
+        <span class="page-badge">Хибрид — QR видео</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Стъпка по стъпка:</strong> 4 малки илюстрации в ред или мрежа, показващи всяка стъпка от
+            експеримента.</p>
+          <p><strong>Материали:</strong> Илюстрирани отделно — чаша, сламка, веро.</p>
+          <p><strong>Румба</strong> в горния ъгъл, казва встъпителното.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ 🧒 Румба: 🔬 „Време е за │
+          │ експеримент!" │
+          │ │
+          │ НЕОБХОДИМИ МАТЕРИАЛИ: │
+          │ 🥛 Чаша 🥤 Сламка 🧴 Веро │ ← Илюстрирани материали
+          │ │
+          │ ┌────────┐ ┌────────┐ │
+          │ │ Стъп.1 │ │ Стъп.2 │ │
+          │ │ Вдишай │ │ Духни │ │ ← 4 стъпки с картинки
+          │ └────────┘ └────────┘ │
+          │ ┌────────┐ ┌────────┐ │
+          │ │ Стъп.3 │ │ Стъп.4 │ │
+          │ │ Тихата │ │ Буря в │ │
+          │ │ река ⭐ │ │океана⭐⭐│ │
+          │ └────────┘ └────────┘ │
+          │ │
+          │ „Какво научихме?" │
+          │ │
+          │ 📱 СКАНИРАЙ МЕ! [QR] │ ← QR код — видео демонстрация
+          │ 💡 Бележка за родителя │
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>Румба:</strong> 🔬 „Време е за експеримент! Ще направим БУРЯ в чаша вода. Готов ли си?"<br><br>
+          <strong>Материали:</strong> 1 прозрачна чаша с вода (до половината) · 1 сламка · Бонус: малко веро за планина
+          от балончета!<br><br>
+          <strong>Стъпка 1:</strong> „Поеми дълбоко въздух — напълни „балоните" в гърдите си догоре!"<br>
+          <strong>Стъпка 2:</strong> „Потопи сламката във водата и духни силно. Виждаш ли как се раждат балончетата?
+          Това е въздухът, който току-що беше вътре в теб!"<br>
+          <strong>Стъпка 3 ⭐:</strong> „Тихата река — Духай толкова леко, че да излезе само едно балонче. Трябва ти
+          голямо търпение!"<br>
+          <strong>Стъпка 4 ⭐⭐:</strong> „Буря в океана — Духай силно и бързо! Внимавай да не изпръскаш Оскар!"<br><br>
+          <strong>Какво научихме:</strong> „Въздухът е невидим, но той е истинска сила! Когато дишаме, ние пълним тялото
+          си с „гориво", за да имаме енергия да тичаме, играем и мислим."<br><br>
+          <strong>QR секция:</strong> 📱 „Сканирай ме!" — „Виж как нашият педагог [Име] прави експеримента заедно с
+          Румба! Таймлапс видео с „Уау" ефекта."<br><br>
+          <strong>Бележка за родителя:</strong> „Контролираното издишване през сламка укрепва мускулите на устата и
+          езика — пряко подпомага говорното развитие. Същевременно е и упражнение за осъзнато дишане."
+        </div>
+
+        <span class="section-label label-qr">Дигитално съдържание (за справка)</span>
+        <div class="detail">
+          <p>Видео (60–90 сек.), заснето отгоре (top-down). Показва реалното изпълнение. Завършва с бонус: добавяне на
+            оцветител за цветна буря.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ PAGE 8 ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header">
+        <h2>Страница 8 — „Дневникът на Откривателя"</h2>
+        <span class="page-badge">Хартия</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Основна сцена:</strong> Румба и Оскар седят на хълм, гледат залеза. Оскар е заспал в скута на
+            Румба. Спокойна, топла атмосфера.</p>
+          <p><strong>4 лица на Оскар</strong> (барометър): радост, изненада, спокойствие, умора — малки кръгли икони.
+          </p>
+          <p><strong>Тийзър:</strong> Малка илюстрация — Румба и Оскар гледат дъга, Оскар се опитва да я хване.</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ 🧒 Румба: „Какъв ден!" │
+          │ │
+          │ ┌───────────────────────┐ │
+          │ │ Румба + Оскар │ │ ← Малка илюстрация (залез)
+          │ │ на хълм, залез │ │
+          │ └───────────────────────┘ │
+          │ │
+          │ ✏️ „Днес научих, че моето тяло │
+          │ може да..." │
+          │ ┌───────────────────────┐ │
+          │ │ │ │ ← Празно поле за рисуване/писане
+          │ │ ПОЛЕ ЗА РИСУВАНЕ │ │
+          │ │ │ │
+          │ └───────────────────────┘ │
+          │ │
+          │ „Как се чувстваш?" │
+          │ 😄 😮 😌 😴 │ ← 4 лица на Оскар за ограждане
+          │ │
+          │ 🔮 ТИЙЗЪР: „В следващия брой..." │
+          │ [мини илюстрация: дъга] │
+          │ 💡 Бележка за родителя │
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>Румба:</strong> „Уау, какъв ден! Научихме толкова много за суперсилите на нашето тяло. Преди да
+          затворим списанието — нека си запишем какво открихме!"<br><br>
+          <strong>Секция 1:</strong> ✏️ „Днес научих, че моето тяло може да..." (празни редове / поле за
+          рисуване)<br><br>
+          <strong>Секция 2:</strong> „Как се чувстваш след днешното приключение? Огради Оскар, който изглежда като теб в
+          момента."<br><br>
+          <strong>Тийзър:</strong> 🔮 „В следващия брой на Оскар и Румбата, двамата герои ще разберат защо небето е
+          синьо и ще направят своя собствена дъга! Не пропускай!"<br><br>
+          <strong>Бележка за родителя:</strong> „Рефлексията след преживяването е ключова за затвърждаване на наученото.
+          Попитай детето какво му е харесало най-много. Ако не може да формулира — не настоявай. Самото оцветяване
+          на „барометъра" е форма на емоционална рефлексия."
+        </div>
+
+        <span class="section-label label-interactive">Интерактивни елементи</span>
+        <div class="detail">
+          <p>Поле за рисуване/писане ~12×8 см</p>
+          <p>4 кръгли икони на Оскар за ограждане</p>
+        </div>
+
+        <div class="age-tags">
+          <span class="age-tag age-4">⭐ 4–5 г.: Детето рисува</span>
+          <span class="age-tag age-6">⭐⭐ 6–7 г.: Детето пише или рисува</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ ГРАМОТА ══════════════════════════════════════ -->
+    <div class="page-card">
+      <div class="page-card-header" style="background: #D4A843;">
+        <h2>Грамота — Ниво 1 „Моите суперсили"</h2>
+        <span class="page-badge">Хартия — по-плътна</span>
+      </div>
+      <div class="page-card-body">
+
+        <span class="section-label label-illust">Илюстрация</span>
+        <div class="detail">
+          <p><strong>Стил:</strong> Официална грамота, но в детски, топъл стил. Декоративна рамка с елементи от темата —
+            кости, сърце, бели дробове, лупа.</p>
+          <p><strong>Румба</strong> стои от лявата страна — аплодира.</p>
+          <p><strong>Оскар</strong> стои от дясната — държи медал с кучешката си робо-лапа.</p>
+          <p><strong>Хартия:</strong> По възможност по-плътна от останалите страници (по-дебел картон или различна
+            текстура).</p>
+        </div>
+
+        <div class="wireframe">
+          ┌─────────────────────────────────────┐
+          │ ╔═══════════════════════════════╗ │
+          │ ║ ║ │
+          │ ║ 🏅 ГРАМОТА 🏅 ║ │
+          │ ║ ║ │
+          │ ║ Тази грамота се присъжда на ║ │
+          │ ║ ║ │
+          │ ║ ________________________ ║ │ ← Поле за име
+          │ ║ (детето вписва името) ║ │
+          │ ║ ║ │
+          │ ║ за успешно завършено ║ │
+          │ ║ НИВО 1 ║ │
+          │ ║ „Моите суперсили" ║ │
+          │ ║ ║ │
+          │ ║ Ти вече знаеш как работи ║ │
+          │ ║ Командният център, можеш ║ │
+          │ ║ да успокоиш пеперудите и ║ │
+          │ ║ да направиш буря в чаша! ║ │
+          │ ║ ║ │
+          │ ║ Ти си истински Откривател. ║ │
+          │ ║ ║ │
+          │ ║ 👏 Румба Оскар 🥇 ║ │ ← Герои от двете страни
+          │ ║ ║ │
+          │ ║ Оскар и Румбата: ║ │
+          │ ║ Списание за откриватели ║ │
+          │ ╚═══════════════════════════════╝ │
+          └─────────────────────────────────────┘
+        </div>
+
+        <span class="section-label label-text">Точен текст</span>
+        <div class="text-exact">
+          <strong>ГРАМОТА</strong><br><br>
+          Тази грамота се присъжда на<br><br>
+          <strong>________________________</strong><br>
+          <em>(детето вписва името си)</em><br><br>
+          за успешно завършено <strong>Ниво 1</strong><br><br>
+          <strong>„Моите суперсили"</strong><br><br>
+          Ти вече знаеш как работи Командният център в главата ти,<br>
+          можеш да успокоиш пеперудите в коремчето си<br>
+          и да направиш буря в чаша вода!<br><br>
+          Ти си истински Откривател.<br><br>
+          🏅 Оскар и Румбата — Ниво 1 от 12
+        </div>
+
+        <span class="section-label label-interactive">Интерактивни елементи</span>
+        <div class="detail">
+          <p>Пунктирана линия за вписване на име</p>
+          <p>Пунктирани линии по краищата за изрязване (ако детето иска да я закачи на стената)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════ SUMMARY ══════════════════════════════════════ -->
+    <div class="overview" style="margin-top: 40px;">
+      <h2>Обобщение</h2>
+      <table class="elements-table">
+        <tr>
+          <th>Стр.</th>
+          <th>Заглавие</th>
+          <th>Тип</th>
+          <th>Илюстрации</th>
+          <th>Интерактивни елементи</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Корица</td>
+          <td>Хартия</td>
+          <td>Румба + Оскар, героична поза</td>
+          <td>3–5 скрити кокалчета, поле за име</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Как работи</td>
+          <td>Хартия</td>
+          <td>3 икони (стъпки), Оскар с балонче</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Историята</td>
+          <td>Хибрид</td>
+          <td>Румба на леглото, Оскар до него</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Активност + QR</td>
+          <td>Хибрид</td>
+          <td>Празен силует на тяло</td>
+          <td>Зона за оцветяване, QR код</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Командният център</td>
+          <td>Хартия</td>
+          <td>Лабиринт, 10 картинки за сетива</td>
+          <td>Лабиринт, линии за свързване, поле за ръка</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Построй супергерой</td>
+          <td>Хартия</td>
+          <td>Анатомична кукла (5–7 части)</td>
+          <td>Пунктир за изрязване</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Буря в чаша</td>
+          <td>Хибрид</td>
+          <td>4 стъпки + материали</td>
+          <td>QR код</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Дневник</td>
+          <td>Хартия</td>
+          <td>Румба+Оскар залез, 4 лица, тийзър дъга</td>
+          <td>Поле за рисуване, барометър за ограждане</td>
+        </tr>
+        <tr style="background: #FFF8E1;">
+          <td>9</td>
+          <td>Грамота</td>
+          <td>Хартия</td>
+          <td>Рамка, Румба аплодира, Оскар с медал</td>
+          <td>Поле за име, пунктир за изрязване</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="rules" style="margin-bottom: 40px;">
+      <h2>Допълнителни насоки</h2>
+      <ul>
+        <li><strong>Текст на отделен слой</strong> — задължително за всяка страница. Графиките трябва да работят и без
+          текст.</li>
+        <li><strong>Румба и Оскар</strong> трябва да изглеждат последователно на всяка страница — създайте character
+          sheet преди да започнете страниците.</li>
+        <li><strong>QR кодовете</strong> ще бъдат добавени отделно — оставете placeholder зони (квадрат ~3×3 см).</li>
+        <li><strong>Бележките за родителя</strong> са с по-малък шрифт и приглушен цвят — не трябва да привличат
+          детското внимание.</li>
+        <li><strong>Bleed:</strong> 3 мм от всяка страна за печат.</li>
+      </ul>
+    </div>
+
   </div>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 7 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 7 — Експеримент „Мощната буря в чаша"</h2>
-    <span class="page-badge">Хибрид — QR видео</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Стъпка по стъпка:</strong> 4 малки илюстрации в ред или мрежа, показващи всяка стъпка от експеримента.</p>
-      <p><strong>Материали:</strong> Илюстрирани отделно — чаша, сламка, веро.</p>
-      <p><strong>Румба</strong> в горния ъгъл, казва встъпителното.</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│  🧒 Румба: 🔬 „Време е за           │
-│   експеримент!"                     │
-│                                     │
-│  НЕОБХОДИМИ МАТЕРИАЛИ:              │
-│  🥛 Чаша    🥤 Сламка    🧴 Веро    │  ← Илюстрирани материали
-│                                     │
-│  ┌────────┐ ┌────────┐              │
-│  │ Стъп.1 │ │ Стъп.2 │              │
-│  │ Вдишай │ │ Духни  │              │  ← 4 стъпки с картинки
-│  └────────┘ └────────┘              │
-│  ┌────────┐ ┌────────┐              │
-│  │ Стъп.3 │ │ Стъп.4 │              │
-│  │ Тихата │ │ Буря в │              │
-│  │ река ⭐ │ │океана⭐⭐│             │
-│  └────────┘ └────────┘              │
-│                                     │
-│  „Какво научихме?"                  │
-│                                     │
-│  📱 СКАНИРАЙ МЕ!          [QR]     │  ← QR код — видео демонстрация
-│  💡 Бележка за родителя             │
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>Румба:</strong> 🔬 „Време е за експеримент! Ще направим БУРЯ в чаша вода. Готов ли си?"<br><br>
-      <strong>Материали:</strong> 1 прозрачна чаша с вода (до половината) · 1 сламка · Бонус: малко веро за планина от балончета!<br><br>
-      <strong>Стъпка 1:</strong> „Поеми дълбоко въздух — напълни „балоните" в гърдите си догоре!"<br>
-      <strong>Стъпка 2:</strong> „Потопи сламката във водата и духни силно. Виждаш ли как се раждат балончетата? Това е въздухът, който току-що беше вътре в теб!"<br>
-      <strong>Стъпка 3 ⭐:</strong> „Тихата река — Духай толкова леко, че да излезе само едно балонче. Трябва ти голямо търпение!"<br>
-      <strong>Стъпка 4 ⭐⭐:</strong> „Буря в океана — Духай силно и бързо! Внимавай да не изпръскаш Оскар!"<br><br>
-      <strong>Какво научихме:</strong> „Въздухът е невидим, но той е истинска сила! Когато дишаме, ние пълним тялото си с „гориво", за да имаме енергия да тичаме, играем и мислим."<br><br>
-      <strong>QR секция:</strong> 📱 „Сканирай ме!" — „Виж как нашият педагог [Име] прави експеримента заедно с Румба! Таймлапс видео с „Уау" ефекта."<br><br>
-      <strong>Бележка за родителя:</strong> „Контролираното издишване през сламка укрепва мускулите на устата и езика — пряко подпомага говорното развитие. Същевременно е и упражнение за осъзнато дишане."
-    </div>
-
-    <span class="section-label label-qr">Дигитално съдържание (за справка)</span>
-    <div class="detail">
-      <p>Видео (60–90 сек.), заснето отгоре (top-down). Показва реалното изпълнение. Завършва с бонус: добавяне на оцветител за цветна буря.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ PAGE 8 ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header">
-    <h2>Страница 8 — „Дневникът на Откривателя"</h2>
-    <span class="page-badge">Хартия</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Основна сцена:</strong> Румба и Оскар седят на хълм, гледат залеза. Оскар е заспал в скута на Румба. Спокойна, топла атмосфера.</p>
-      <p><strong>4 лица на Оскар</strong> (барометър): радост, изненада, спокойствие, умора — малки кръгли икони.</p>
-      <p><strong>Тийзър:</strong> Малка илюстрация — Румба и Оскар гледат дъга, Оскар се опитва да я хване.</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│  🧒 Румба: „Какъв ден!"             │
-│                                     │
-│  ┌───────────────────────┐          │
-│  │   Румба + Оскар       │          │  ← Малка илюстрация (залез)
-│  │   на хълм, залез      │          │
-│  └───────────────────────┘          │
-│                                     │
-│  ✏️ „Днес научих, че моето тяло     │
-│   може да..."                       │
-│  ┌───────────────────────┐          │
-│  │                       │          │  ← Празно поле за рисуване/писане
-│  │   ПОЛЕ ЗА РИСУВАНЕ   │          │
-│  │                       │          │
-│  └───────────────────────┘          │
-│                                     │
-│  „Как се чувстваш?"                │
-│  😄  😮  😌  😴                     │  ← 4 лица на Оскар за ограждане
-│                                     │
-│  🔮 ТИЙЗЪР: „В следващия брой..."   │
-│  [мини илюстрация: дъга]            │
-│  💡 Бележка за родителя             │
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>Румба:</strong> „Уау, какъв ден! Научихме толкова много за суперсилите на нашето тяло. Преди да затворим списанието — нека си запишем какво открихме!"<br><br>
-      <strong>Секция 1:</strong> ✏️ „Днес научих, че моето тяло може да..." (празни редове / поле за рисуване)<br><br>
-      <strong>Секция 2:</strong> „Как се чувстваш след днешното приключение? Огради Оскар, който изглежда като теб в момента."<br><br>
-      <strong>Тийзър:</strong> 🔮 „В следващия брой на АЛФА, Румба и Оскар ще разберат защо небето е синьо и ще направят своя собствена дъга! Не пропускай!"<br><br>
-      <strong>Бележка за родителя:</strong> „Рефлексията след преживяването е ключова за затвърждаване на наученото. Попитайте детето какво му е харесало най-много. Ако не може да формулира — не настоявайте. Самото оцветяване на „барометъра" е форма на емоционална рефлексия."
-    </div>
-
-    <span class="section-label label-interactive">Интерактивни елементи</span>
-    <div class="detail">
-      <p>Поле за рисуване/писане ~12×8 см</p>
-      <p>4 кръгли икони на Оскар за ограждане</p>
-    </div>
-
-    <div class="age-tags">
-      <span class="age-tag age-4">⭐ 4–5 г.: Детето рисува</span>
-      <span class="age-tag age-6">⭐⭐ 6–7 г.: Детето пише или рисува</span>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ ГРАМОТА ══════════════════════════════════════ -->
-<div class="page-card">
-  <div class="page-card-header" style="background: #D4A843;">
-    <h2>Грамота — Ниво 1 „Моите суперсили"</h2>
-    <span class="page-badge">Хартия — по-плътна</span>
-  </div>
-  <div class="page-card-body">
-
-    <span class="section-label label-illust">Илюстрация</span>
-    <div class="detail">
-      <p><strong>Стил:</strong> Официална грамота, но в детски, топъл стил. Декоративна рамка с елементи от темата — кости, сърце, бели дробове, лупа.</p>
-      <p><strong>Румба</strong> стои от лявата страна — аплодира.</p>
-      <p><strong>Оскар</strong> стои от дясната — държи медал в устата си.</p>
-      <p><strong>Хартия:</strong> По възможност по-плътна от останалите страници (по-дебел картон или различна текстура).</p>
-    </div>
-
-    <div class="wireframe">
-┌─────────────────────────────────────┐
-│  ╔═══════════════════════════════╗  │
-│  ║                               ║  │
-│  ║         🏅 ГРАМОТА 🏅          ║  │
-│  ║                               ║  │
-│  ║  Тази грамота се присъжда на  ║  │
-│  ║                               ║  │
-│  ║   ________________________    ║  │  ← Поле за име
-│  ║     (детето вписва името)     ║  │
-│  ║                               ║  │
-│  ║  за успешно завършено         ║  │
-│  ║       НИВО 1                  ║  │
-│  ║  „Моите суперсили"            ║  │
-│  ║                               ║  │
-│  ║  Ти вече знаеш как работи     ║  │
-│  ║  Командният център, можеш     ║  │
-│  ║  да успокоиш пеперудите и     ║  │
-│  ║  да направиш буря в чаша!     ║  │
-│  ║                               ║  │
-│  ║  Ти си истински Откривател.   ║  │
-│  ║                               ║  │
-│  ║ 👏 Румба            Оскар 🥇   ║  │  ← Герои от двете страни
-│  ║                               ║  │
-│  ║         АЛФА                  ║  │
-│  ║       Ниво 1 от 12            ║  │
-│  ╚═══════════════════════════════╝  │
-└─────────────────────────────────────┘
-    </div>
-
-    <span class="section-label label-text">Точен текст</span>
-    <div class="text-exact">
-      <strong>ГРАМОТА</strong><br><br>
-      Тази грамота се присъжда на<br><br>
-      <strong>________________________</strong><br>
-      <em>(детето вписва името си)</em><br><br>
-      за успешно завършено <strong>Ниво 1</strong><br><br>
-      <strong>„Моите суперсили"</strong><br><br>
-      Ти вече знаеш как работи Командният център в главата ти,<br>
-      можеш да успокоиш пеперудите в коремчето си<br>
-      и да направиш буря в чаша вода!<br><br>
-      Ти си истински Откривател.<br><br>
-      🏅 АЛФА — Ниво 1 от 12
-    </div>
-
-    <span class="section-label label-interactive">Интерактивни елементи</span>
-    <div class="detail">
-      <p>Пунктирана линия за вписване на име</p>
-      <p>Пунктирани линии по краищата за изрязване (ако детето иска да я закачи на стената)</p>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════ SUMMARY ══════════════════════════════════════ -->
-<div class="overview" style="margin-top: 40px;">
-  <h2>Обобщение</h2>
-  <table class="elements-table">
-    <tr>
-      <th>Стр.</th><th>Заглавие</th><th>Тип</th><th>Илюстрации</th><th>Интерактивни елементи</th>
-    </tr>
-    <tr>
-      <td>1</td><td>Корица</td><td>Хартия</td>
-      <td>Румба + Оскар, героична поза</td>
-      <td>3–5 скрити кокалчета, поле за име</td>
-    </tr>
-    <tr>
-      <td>2</td><td>Как работи</td><td>Хартия</td>
-      <td>3 икони (стъпки), Оскар с балонче</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>3</td><td>Историята</td><td>Хибрид</td>
-      <td>Румба на леглото, Оскар до него</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>4</td><td>Активност + QR</td><td>Хибрид</td>
-      <td>Празен силует на тяло</td>
-      <td>Зона за оцветяване, QR код</td>
-    </tr>
-    <tr>
-      <td>5</td><td>Командният център</td><td>Хартия</td>
-      <td>Лабиринт, 10 картинки за сетива</td>
-      <td>Лабиринт, линии за свързване, поле за ръка</td>
-    </tr>
-    <tr>
-      <td>6</td><td>Построй супергерой</td><td>Хартия</td>
-      <td>Анатомична кукла (5–7 части)</td>
-      <td>Пунктир за изрязване</td>
-    </tr>
-    <tr>
-      <td>7</td><td>Буря в чаша</td><td>Хибрид</td>
-      <td>4 стъпки + материали</td>
-      <td>QR код</td>
-    </tr>
-    <tr>
-      <td>8</td><td>Дневник</td><td>Хартия</td>
-      <td>Румба+Оскар залез, 4 лица, тийзър дъга</td>
-      <td>Поле за рисуване, барометър за ограждане</td>
-    </tr>
-    <tr style="background: #FFF8E1;">
-      <td>9</td><td>Грамота</td><td>Хартия</td>
-      <td>Рамка, Румба аплодира, Оскар с медал</td>
-      <td>Поле за име, пунктир за изрязване</td>
-    </tr>
-  </table>
-</div>
-
-<div class="rules" style="margin-bottom: 40px;">
-  <h2>Допълнителни насоки</h2>
-  <ul>
-    <li><strong>Текст на отделен слой</strong> — задължително за всяка страница. Графиките трябва да работят и без текст.</li>
-    <li><strong>Румба и Оскар</strong> трябва да изглеждат последователно на всяка страница — създайте character sheet преди да започнете страниците.</li>
-    <li><strong>QR кодовете</strong> ще бъдат добавени отделно — оставете placeholder зони (квадрат ~3×3 см).</li>
-    <li><strong>Бележките за родителя</strong> са с по-малък шрифт и приглушен цвят — не трябва да привличат детското внимание.</li>
-    <li><strong>Bleed:</strong> 3 мм от всяка страна за печат.</li>
-  </ul>
-</div>
-
-</div>
 </body>
+
 </html>

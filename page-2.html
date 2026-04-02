@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница 2 — Как работи това списание?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-cream: #FDFBF7;
+            --text-main: #2D2A26;
+            --brand-orange: #E66231;
+            --brand-teal: #36827F;
+            --brand-yellow: #F4A261;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+            background-image: radial-gradient(circle at top left, rgba(230, 98, 49, 0.05), transparent 40%),
+                              radial-gradient(circle at bottom right, rgba(54, 130, 127, 0.05), transparent 40%);
+        }
+
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Section - Parents */
+        .parent-section {
+            background-color: rgba(244, 162, 97, 0.1);
+            border-left: 4px solid var(--brand-orange);
+            padding: 30px;
+            border-radius: 0 16px 16px 0;
+            margin-bottom: 40px;
+        }
+
+        h2.title {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: var(--brand-orange);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .parent-text {
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        /* How it works */
+        h3.section-subtitle {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.8rem;
+            color: var(--brand-teal);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            border: 2px solid rgba(54, 130, 127, 0.1);
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(54, 130, 127, 0.15);
+            border-color: var(--brand-teal);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--brand-teal);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(54, 130, 127, 0.3);
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            margin: 10px 0 20px;
+            display: block;
+        }
+
+        .step-title {
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .step-desc {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Bottom Section - Kids */
+        .kids-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: linear-gradient(135deg, rgba(54,130,127,0.05), rgba(54,130,127,0.1));
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        .oscar-img-container {
+            flex: 0 0 250px;
+        }
+
+        .oscar-img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+        }
+
+        .speech-bubble {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            border: 2px dashed var(--brand-teal);
+            position: relative;
+            flex: 1;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--brand-teal);
+        }
+
+        .speech-bubble::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 25px;
+            height: 25px;
+            background: white;
+            border-left: 2px dashed var(--brand-teal);
+            border-bottom: 2px dashed var(--brand-teal);
+        }
+
+        .highlighted-icons {
+            font-size: 1.4rem;
+            display: inline-block;
+            margin: 0 4px;
+            animation: bounce 2s infinite ease-in-out;
+            transform-origin: center bottom;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @media (max-width: 768px) {
+            .steps-grid { grid-template-columns: 1fr; }
+            .kids-section { flex-direction: column; text-align: center; }
+            .speech-bubble::before {
+                left: 50%;
+                top: -15px;
+                transform: translateX(-50%) rotate(135deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Parent Addressed Section -->
+        <div class="parent-section">
+            <h2 class="title">Скъпи родителю,</h2>
+            <div class="parent-text">
+                Държите в ръцете си нещо различно — списание, което оживява. Вашето дете ще рисува, ще решава задачи и ще слуша истории, като преминава плавно между хартията и екрана. Няма нужда от приложение — само камерата на вашия телефон.
+            </div>
+        </div>
+
+        <!-- How it works -->
+        <h3 class="section-subtitle">Как работи?</h3>
+        
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <span class="step-icon">📖</span>
+                <div class="step-title">Разгледай и направи</div>
+                <div class="step-desc">Детето работи със страниците: рисува, решава, изрязва.</div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <span class="step-icon">📱</span>
+                <div class="step-title">Сканирай кода</div>
+                <div class="step-desc">Когато видите знака 📱, насочете камерата на телефона към QR кода. Отваря се аудио, видео или игра.</div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <span class="step-icon">🔄</span>
+                <div class="step-title">Върни се към хартията</div>
+                <div class="step-desc">След дигиталното съдържание, детето продължава на следващата страница. Екранът е мост, не дестинация.</div>
+            </div>
+        </div>
+
+        <!-- Kids Addressed Section -->
+        <div class="kids-section">
+            <div class="oscar-img-container">
+                <img src="oscar_page2.png" alt="Оскар кучето-робот с молив, ножица и телефон">
+            </div>
+            
+            <div class="speech-bubble">
+                „Хей, Откривателю! Виждаш ли тези знаци? Когато видиш <span class="highlighted-icons">📱</span> — помоли мама или тати да ти помогнат с телефона. Когато видиш <span class="highlighted-icons">✏️</span> — грабвай моливите! А когато видиш <span class="highlighted-icons">✂️</span> — ще ти трябва ножичка. Готов ли си? Да тръгваме!"
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
